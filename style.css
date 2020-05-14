@@ -1,0 +1,420 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*---------navigation bar-----------*/
+#nav-bar 
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img /*----icon----*/
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li    /*----home,about---*/
+{
+    padding: 0 10px;
+    
+}
+.navbar-nav li a
+{
+    float:right;
+    text-align: left;
+}
+#nav-bar ul li a:hover   /*----colur change when curser on the img---*/
+{
+    color: #007bff!important;
+}
+.navbar /*----navbar background colur---*/
+{
+    background: WHITE;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link /*----navbar img properties---*/
+{
+    color: #555!important;
+    font-weight: 600    ;
+    font-size: 16px;
+}
+ /*----slider---*/
+#slider  /*----image width--*/
+{
+    width: 100%;
+}
+.carousel-caption  /*----slider caption---*/
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h5/*----slider caption colur,font size---*/
+{
+    color: white;
+    font-size: 50px;
+}
+/*------------------------aboout----------------------*/
+#about /*----about properties---*/
+{
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    color: #555;
+}
+#about btn, .btn/*----button---*/
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content/*----about properties paragraph---*/
+{
+    margin-top: 25px;
+}
+.skills-bar p/*----about properties paragraph---*/
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar/*----progress bar radius---*/
+{
+    border-radius: 100px;
+}
+.progress/*----progress bar radius---*/
+{
+    border-radius: 50px!important;
+    margin-bottom: 20px;
+}
+/*---------------------------------------our services-------------*/
+#services/*----services text---*/
+{
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgba(0,0,0,0.8)),url(bk.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1/*----services text center---*/
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;/*----bk img height---*/
+}
+#services h1::after/*----servics text underline---*/
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 215px;
+    margin: 12px auto 20px;
+}
+.services/*----web development from top--*/
+{
+    margin-top: 20px;
+}
+.icon/*----icon properties--*/
+{
+    font-size: 40px;
+    margin: 15px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#services p/*----parag prop--*/
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover/*----colur effect on cards--*/
+{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*---------------------------------team-----------------------------*/
+#team/*----our team prop----*/
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1/*----our team prop----*/
+{
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}
+h1::after/*----our team UNDERLINE----*/
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 15px auto 5px;
+}
+.profile-pic/*----pik top----*/
+{
+    margin-top: 25px;
+   
+}
+.profile-pic .img-box/*----pik box----*/
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+    
+}
+.profile-pic .img-box img/*----blk&white ht wd----*/
+{
+    filter: grayscale(1);
+    height: 220px;
+    width: 210px;
+}
+.profile-pic .img-box img:hover/*---cursor on pik colr chg----*/
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2/*----h2 name bold----*/
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff!important;
+}
+.profile-pic h3/*----h3 name bold----*/
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+   
+}
+#team .fa/*---fb icon prop----*/
+{
+    height: 25px;
+    width: 25px;
+    color: #007bff;
+    background: white;
+    padding: 4px;
+    border-radius: 100%;
+}
+.img-box ul
+{
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    padding: 1px;
+    display: inline-block;
+}
+.img-box:hover ul
+{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li
+{
+    transition: 0.5s;
+}
+/*------------------------------------promo------------------------*/
+#promo/*----bka img & text----*/
+{
+    background-image: url(bka.jpg);
+    background-size:cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/*------------------------------------price plan------------------------*/
+#price/*---price top----*/
+{
+    padding: 40px 0;
+    background: #efefef;
+}
+.single-price/*---price box----*/
+{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+.single-price:hover/*--cursor on box----*/
+{
+    box-shadow: 0 2px 20px blue ;
+}
+.price-head
+{
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+.price-head h2
+{
+    color: #FFF;
+    font-size: 30PX;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.price-head p
+{
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+#price span
+{
+    font-size: 15px;
+}
+.price-content
+{
+    direction: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.price-content ul li
+{
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+ul li:last-child;
+{
+    border: none;
+}
+.fa-check-circle
+{
+    color: green;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.fa-times-circle
+{
+    color: red;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.price-button
+{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn
+{
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 50px;
+    font-size:18px;
+    transform: 0.5s;
+}
+.buy-btn:hover
+{
+    border-color: 1px solid white;
+    background-color: #3f51b5;
+}
+a
+{
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
